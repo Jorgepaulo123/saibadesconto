@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  
+
+  
+
+  <style>
+
+    
+
+    p{
+
+      color: red;
+
+      margin: 0;
+
+    }
+
+    
+
+    #p{
+
+      color: lime;
+
+    }
+
+    
+
+  </style>
+
+  
+
+  
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+ 
+
+  
+
+  
+
+  
+
+  <title></title>
+
+</head>
+
+<body>
+
+<h1> descontos de produtos</h1>
+
+<div id="dv1">
+
+<input class="btn" id="campo" type="number" placeholder="valor d produto ">
+
+<br><br>
+
+<input class="btn" id="per" type="text" placeholder="quantos %? " maxlength="2">
+
+</div>
+
+<div id="re" class="btn">
+
+  
+
+</div>
+
+<button onclick="cl()">calcular</button>
+
+<input type="checkbox" name="" id="">
+
+<input type="checkbox" name="" id="">
+
+<script>
+
+  
+
+  function cl(){
+
+    
+
+    var campo=document.getElementById('campo')
+
+    
+
+   var campo2=Number(campo.value)
+
+    
+
+    
+
+    var per=document.getElementById('per')
+
+    
+
+    
+
+    var per2=Number(per.value)
+
+    
+
+   var  novo = campo2 - (campo2 *per2/100)
+
+    
+
+    var novo2=novo-campo2
+
+  
+
+  var re=document.getElementById('re').innerHTML = (`o preço digitado do produto é ${campo2}'MT'  ${per2}% de discoto passa para <p id='p'>${novo}'</p> o valor discontado  é de <p>${novo2}</p> `)
+
+  
+
+  }
+
+  //if (ch== "on")
+
+    
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</script>
+
+</body>
+
+</html>
+
